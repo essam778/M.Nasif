@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مصطفى ناصف | مكتب المحاماة والاستشارات القانونية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="nav-logo">مصطفى ناصف</div>
+  <ul class="nav-links">
+    <li><a href="#about">عن المكتب</a></li>
+    <li><a href="#services">الخدمات</a></li>
+    <li><a href="#why">لماذا نحن</a></li>
+    <li><a href="#testimonials">آراء العملاء</a></li>
+    <li><a href="#contact" class="nav-cta">تواصل معنا</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-lines"></div>
+
+  <!-- Ornamental scales of justice SVG -->
+  <svg class="hero-ornament" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="200" cy="200" r="190" stroke="currentColor" stroke-width="1"/>
+    <circle cx="200" cy="200" r="150" stroke="currentColor" stroke-width="0.5"/>
+    <line x1="200" y1="60" x2="200" y2="340" stroke="currentColor" stroke-width="2"/>
+    <line x1="60" y1="160" x2="340" y2="160" stroke="currentColor" stroke-width="1.5"/>
+    <ellipse cx="110" cy="220" rx="60" ry="20" stroke="currentColor" stroke-width="1.5"/>
+    <ellipse cx="290" cy="220" rx="60" ry="220" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="110" y1="160" x2="110" y2="200" stroke="currentColor" stroke-width="1"/>
+    <line x1="290" y1="160" x2="290" y2="200" stroke="currentColor" stroke-width="1"/>
+    <circle cx="200" cy="160" r="8" fill="currentColor"/>
+    <!-- decorative rays -->
+    <line x1="200" y1="60" x2="160" y2="20" stroke="currentColor" stroke-width="0.5"/>
+    <line x1="200" y1="60" x2="240" y2="20" stroke="currentColor" stroke-width="0.5"/>
+    <polygon points="195,50 200,30 205,50" fill="currentColor"/>
+    <!-- pan contents suggesting coins -->
+    <circle cx="100" cy="218" r="4" fill="currentColor" opacity="0.5"/>
+    <circle cx="115" cy="222" r="3" fill="currentColor" opacity="0.5"/>
+    <circle cx="122" cy="216" r="4" fill="currentColor" opacity="0.5"/>
+    <circle cx="280" cy="218" r="4" fill="currentColor" opacity="0.5"/>
+    <circle cx="295" cy="215" r="3" fill="currentColor" opacity="0.5"/>
+    <circle cx="303" cy="221" r="4" fill="currentColor" opacity="0.5"/>
+  </svg>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow" id="heroEyebrow">
+      <div class="eyebrow-line"></div>
+      <span>مكتب المحاماة والاستشارات القانونية</span>
+    </div>
+    <h1 class="hero-title" id="heroTitle">
+      الأستاذ<br><span class="gold">مصطفى ناصف</span>
+    </h1>
+    <p class="hero-subtitle" id="heroSub">محامٍ ومستشار قانوني</p>
+    <div class="hero-divider" id="heroDivider"></div>
+    <p class="hero-desc" id="heroDesc">
+      خبرة قانونية راسخة وسمعة موثوقة بنيناها على مر السنين. نؤمن بأن العدالة حق لكل إنسان، ونعمل بكل ما أوتينا من جهد لتحقيق أفضل النتائج لموكلينا.
+    </p>
+    <div class="hero-stats" id="heroStats">
+      <div class="stat-item">
+        <div class="stat-num" data-target="15">0</div>
+        <div class="stat-label">سنة خبرة</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="500">0</div>
+        <div class="stat-label">قضية ناجحة</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="100">0</div>
+        <div class="stat-label">توصية على جوجل</div>
+      </div>
+    </div>
+    <div class="hero-btns" id="heroBtns">
+      <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        <span style="position:relative;z-index:1">احجز استشارة</span>
+      </button>
+      <button class="btn-secondary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+        خدماتنا القانونية
+      </button>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>تمرر للأسفل</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-photo-wrap reveal-left">
+      <div class="about-photo-frame">
+        <div class="about-photo-bg">
+          <div class="photo-placeholder">
+            <div class="photo-initials">م.ن</div>
+            <div class="photo-label">
+              <img src="images/unnamed.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="about-photo-corner corner-tl"></div>
+        <div class="about-photo-corner corner-br"></div>
+      </div>
+      <div class="about-photo-accent"></div>
+      <div class="about-badge">
+        <span class="badge-num">+15</span>
+        <span class="badge-text">سنة في الميدان</span>
+      </div>
+    </div>
+
+    <div class="about-text-content reveal-right">
+      <div class="section-tag">
+        <span>من نحن</span>
+      </div>
+      <h2 class="section-heading">خبرة قانونية<br><span class="gold">تبني الثقة</span></h2>
+      <span class="gold-bar"></span>
+      <p class="section-lead">
+        الأستاذ مصطفى ناصف، محامٍ ومستشار قانوني متخصص، يمتلك سجلاً حافلاً من النجاحات القضائية وثقة عملاء من مختلف القطاعات. نتميز بالتزامنا الكامل بقضايا موكلينا ونهجنا الاستراتيجي في التعامل مع كل ملف.
+      </p>
+      <ul class="about-qualities">
+        <li>حاصل على درجة الليسانس في الحقوق من جامعة مرموقة، مع دراسات متخصصة في القانون التجاري والمدني</li>
+        <li>أكثر من 500 قضية ناجحة في مختلف المجالات القانونية أمام المحاكم المصرية</li>
+        <li>100 توصية موثقة على جوجل ماپس تعكس ثقة حقيقية من عملاء راضين</li>
+        <li>أسلوب عمل يجمع بين الدقة القانونية والتواصل الإنساني مع كل موكل</li>
+        <li>متابعة مستمرة لكل قضية من بدايتها حتى صدور الحكم النهائي</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section id="services">
+  <div class="services-intro reveal">
+    <div>
+      <div class="section-tag"><span>خدماتنا</span></div>
+      <h2 class="section-heading">ما يمكننا<br><span class="gold">تحقيقه لك</span></h2>
+    </div>
+    <p class="section-lead" style="text-align:left">
+      نقدم منظومة متكاملة من الخدمات القانونية المتخصصة تغطي جميع احتياجاتك سواء كنت فرداً أو شركة.
+    </p>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <span class="service-icon">⚖️</span>
+      <span class="service-num">/ 01</span>
+      <div class="service-title">قضايا الأحوال الشخصية</div>
+      <p class="service-desc">الطلاق، الحضانة، النفقة، الميراث، وكل ما يتعلق بشؤون الأسرة. نتعامل مع هذه القضايا الحساسة بمهنية عالية واحترام كامل لخصوصيتكم.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.1s">
+      <span class="service-icon">🏢</span>
+      <span class="service-num">/ 02</span>
+      <div class="service-title">القانون التجاري والشركات</div>
+      <p class="service-desc">تأسيس الشركات، العقود التجارية، النزاعات بين الشركاء، حماية حقوق الملكية الفكرية، وكل ما تحتاجه لحماية نشاطك التجاري.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.2s">
+      <span class="service-icon">🏗️</span>
+      <span class="service-num">/ 03</span>
+      <div class="service-title">القضايا العقارية</div>
+      <p class="service-desc">عقود البيع والشراء، النزاعات على الملكية، الإيجارات، التوثيق الرسمي، ومتابعة إجراءات الشهر العقاري حتى انتهائها.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.3s">
+      <span class="service-icon">🛡️</span>
+      <span class="service-num">/ 04</span>
+      <div class="service-title">الدفاع الجنائي</div>
+      <p class="service-desc">تمثيل قانوني احترافي أمام المحاكم الجنائية، حماية حقوق المتهمين، والسعي للحصول على أفضل نتيجة ممكنة بكل وسائل الدفاع القانونية.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.4s">
+      <span class="service-icon">📋</span>
+      <span class="service-num">/ 05</span>
+      <div class="service-title">العقود والتوثيق</div>
+      <p class="service-desc">صياغة ومراجعة جميع أنواع العقود، التأكد من استيفائها لشروط الصحة القانونية، والتفاوض على بنودها لحماية مصالحك.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.5s">
+      <span class="service-icon">💼</span>
+      <span class="service-num">/ 06</span>
+      <div class="service-title">الاستشارات القانونية</div>
+      <p class="service-desc">جلسات استشارية فردية تتيح لك فهم وضعك القانوني بوضوح تام، واتخاذ القرارات الصحيحة قبل الوقوع في أي مشكلة.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY US ── -->
+<section id="why">
+  <div class="why-inner">
+    <div class="reveal-left">
+      <div class="section-tag"><span>لماذا نحن</span></div>
+      <h2 class="section-heading">ما يميزنا عن<br><span class="gold">غيرنا</span></h2>
+      <span class="gold-bar"></span>
+      <ul class="why-features">
+        <li class="why-feature">
+          <div class="why-feature-icon">🎯</div>
+          <div>
+            <div class="why-feature-title">استراتيجية دفاعية مخصصة</div>
+            <div class="why-feature-desc">ندرس كل قضية على حدة ونضع خطة قانونية مصممة خصيصاً لظروفك وأهدافك.</div>
+          </div>
+        </li>
+        <li class="why-feature">
+          <div class="why-feature-icon">⚡</div>
+          <div>
+            <div class="why-feature-title">تواصل فوري وشفاف</div>
+            <div class="why-feature-desc">نحدثك بانتظام بكل جديد في قضيتك، لا أسرار ولا انتظار طويل للرد.</div>
+          </div>
+        </li>
+        <li class="why-feature">
+          <div class="why-feature-icon">🏆</div>
+          <div>
+            <div class="why-feature-title">سجل حافل بالنجاحات</div>
+            <div class="why-feature-desc">معدل نجاح مرتفع عبر مئات القضايا في مختلف التخصصات القانونية.</div>
+          </div>
+        </li>
+        <li class="why-feature">
+          <div class="why-feature-icon">🤝</div>
+          <div>
+            <div class="why-feature-title">أسعار عادلة وشفافة</div>
+            <div class="why-feature-desc">نؤمن أن العدالة لا تُباع بأسعار مرتفعة. رسومنا واضحة من اليوم الأول بدون أي مفاجآت.</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="why-visual reveal-right">
+      <div class="ring1 why-ring"></div>
+      <div class="ring2 why-ring"></div>
+      <div class="ring3 why-ring"></div>
+      <div class="why-center">
+        <div class="why-center-symbol">⚖</div>
+        <div class="why-center-text">العدالة قيمتنا</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section id="testimonials">
+  <div class="testimonials-header reveal">
+    <div class="section-tag"><span>آراء العملاء</span></div>
+    <h2 class="section-heading">ماذا يقول<br><span class="gold">موكلونا</span></h2>
+    <p class="section-lead">100 توصية حقيقية على جوجل ماپس تتحدث عن نفسها</p>
+  </div>
+
+  <div class="reviews-banner reveal">
+    <div>
+      <div class="google-stars">★★★★★</div>
+      <div class="reviews-label">التقييم على جوجل ماپس</div>
+    </div>
+    <div class="reviews-count">5.0</div>
+    <div>
+      <div style="font-size:1.8rem;color:var(--gold);font-weight:700;font-family:'Amiri',serif">100+</div>
+      <div class="reviews-label">توصية موثقة</div>
+    </div>
+  </div>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card featured reveal" style="transition-delay:0.1s">
+      <span class="testimonial-quote">"</span>
+      <p class="testimonial-text">الأستاذ مصطفى أنقذ حقوقي في قضية عقارية معقدة استمرت لسنوات. لم يتركني لحظة بدون متابعة، وكان صادقاً معي في كل خطوة. الحمد لله انتهت القضية لصالحي بنسبة 100%.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">أ.م</div>
+        <div>
+          <div class="author-name">أحمد محمود</div>
+          <div class="author-case">قضية عقارية</div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal" style="transition-delay:0.2s">
+      <span class="testimonial-quote">"</span>
+      <p class="testimonial-text">تعاملت معه في قضية أحوال شخصية صعبة جداً. وجدت محامياً ورجلاً محترماً يفهم الظروف الإنسانية ويتعامل بحكمة وهدوء. أنصح الجميع به بكل ثقة.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">م.س</div>
+        <div>
+          <div class="author-name">منى سعيد</div>
+          <div class="author-case">أحوال شخصية</div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal" style="transition-delay:0.3s">
+      <span class="testimonial-quote">"</span>
+      <p class="testimonial-text">أسس لنا شركتنا بكل الإجراءات القانونية الصحيحة وبوقت قياسي. متخصص جداً في القانون التجاري، ومتابعته للملف كانت استثنائية. شكراً أستاذ مصطفى.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">ك.ع</div>
+        <div>
+          <div class="author-name">كريم عبدالله</div>
+          <div class="author-case">تأسيس شركة</div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal" style="transition-delay:0.4s">
+      <span class="testimonial-quote">"</span>
+      <p class="testimonial-text">الاستشارة القانونية معه كانت أفضل قرار اتخذته. شرح لي وضعي بوضوح تام وأنقذني من صفقة كانت ستضيع حقوقي. محامي يمكن الوثوق به فعلاً.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">ن.ح</div>
+        <div>
+          <div class="author-name">نادية حسن</div>
+          <div class="author-case">استشارة قانونية</div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal" style="transition-delay:0.5s">
+      <span class="testimonial-quote">"</span>
+      <p class="testimonial-text">قضية جنائية كانت تمر بظروف بالغة الصعوبة. الأستاذ مصطفى دافع عن حقوقي ببراعة قانونية واضحة وثقة بالنفس. النتيجة فاقت توقعاتي تماماً.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">ط.ي</div>
+        <div>
+          <div class="author-name">طارق يوسف</div>
+          <div class="author-case">دفاع جنائي</div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal" style="transition-delay:0.6s">
+      <span class="testimonial-quote">"</span>
+      <p class="testimonial-text">ساعدني في استرداد مبلغ كبير من شريك عمل سابق. كان محترفاً في التفاوض ومتمكناً من ملف القضية. أتمنى له التوفيق دائماً وسأتعامل معه في أي قضية مستقبلية.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">س.ب</div>
+        <div>
+          <div class="author-name">سامي بدر</div>
+          <div class="author-case">نزاع تجاري</div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-tag reveal"><span>اتصل بنا</span></div>
+  <h2 class="section-heading reveal">ابدأ باستشارتك<br><span class="gold">اليوم</span></h2>
+  <span class="gold-bar reveal"></span>
+
+  <div class="contact-inner" style="margin-top:60px">
+    <div class="contact-info reveal-left">
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div>
+          <div class="contact-label">هاتف</div>
+          <div class="contact-value">+20 100 000 0000</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📱</div>
+        <div>
+          <div class="contact-label">واتساب</div>
+          <div class="contact-value">+20 100 000 0000</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📧</div>
+        <div>
+          <div class="contact-label">البريد الإلكتروني</div>
+          <div class="contact-value">info@nasseflawoffice.com</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">العنوان</div>
+          <div class="contact-value">القاهرة، جمهورية مصر العربية</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🕐</div>
+        <div>
+          <div class="contact-label">ساعات العمل</div>
+          <div class="contact-value">السبت – الخميس: 9 صباحاً – 6 مساءً</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form reveal-right">
+      <div class="form-group">
+        <label class="form-label">الاسم الكامل</label>
+        <input type="text" class="form-input" placeholder="أدخل اسمك الكامل">
+      </div>
+      <div class="form-group">
+        <label class="form-label">رقم الهاتف</label>
+        <input type="tel" class="form-input" placeholder="رقم هاتفك للتواصل">
+      </div>
+      <div class="form-group">
+        <label class="form-label">نوع القضية</label>
+        <input type="text" class="form-input" placeholder="مثال: أحوال شخصية، تجاري، عقاري...">
+      </div>
+      <div class="form-group">
+        <label class="form-label">نبذة عن قضيتك</label>
+        <textarea class="form-textarea" placeholder="اشرح موضوع قضيتك باختصار ليتمكن المحامي من الاستعداد المناسب..."></textarea>
+      </div>
+      <button class="btn-primary" style="width:100%;justify-content:center;display:flex;align-items:center;gap:10px" onclick="handleSubmit(this)">
+        <span style="position:relative;z-index:1">إرسال الطلب</span>
+        <span style="position:relative;z-index:1">←</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">مصطفى ناصف</div>
+      <div class="footer-logo-sub">مكتب المحاماة والاستشارات القانونية</div>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#about">عن المكتب</a></li>
+      <li><a href="#services">الخدمات</a></li>
+      <li><a href="#why">لماذا نحن</a></li>
+      <li><a href="#testimonials">آراء العملاء</a></li>
+      <li><a href="#contact">تواصل</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 مكتب مصطفى ناصف للمحاماة. جميع الحقوق محفوظة.</div>
+    <div class="footer-tagline">العدل أساس الملك</div>
+  </div>
+</footer>
+
+<script>
+// ─── Custom Cursor ───
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX; mouseY = e.clientY;
+  cursor.style.transform = `translate(${mouseX - 6}px, ${mouseY - 6}px)`;
+});
+
+function animateRing() {
+  ringX += (mouseX - ringX - 18) * 0.12;
+  ringY += (mouseY - ringY - 18) * 0.12;
+  ring.style.transform = `translate(${ringX}px, ${ringY}px)`;
+  requestAnimationFrame(animateRing);
+}
+animateRing();
+
+document.querySelectorAll('a, button, .service-card, .testimonial-card, .why-feature').forEach(el => {
+  el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'var(--gold-light)'; });
+  el.addEventListener('mouseleave', () => { ring.style.width = '36px'; ring.style.height = '36px'; ring.style.borderColor = 'var(--gold)'; });
+});
+
+// ─── Hero Animations ───
+window.addEventListener('load', () => {
+  const tl = (el, delay, y = 30) => {
+    if (!el) return;
+    setTimeout(() => {
+      el.style.transition = `opacity 0.8s ease, transform 0.8s ease`;
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0)';
+    }, delay);
+  };
+  tl(document.getElementById('heroEyebrow'), 300);
+  tl(document.getElementById('heroTitle'), 500);
+  tl(document.getElementById('heroSub'), 650);
+  setTimeout(() => {
+    const d = document.getElementById('heroDivider');
+    if(d) { d.style.transition = 'opacity 0.8s'; d.style.opacity = '1'; }
+  }, 750);
+  tl(document.getElementById('heroDesc'), 850);
+  tl(document.getElementById('heroStats'), 1000);
+  tl(document.getElementById('heroBtns'), 1150);
+
+  // Counter animation
+  setTimeout(() => {
+    document.querySelectorAll('[data-target]').forEach(el => {
+      const target = parseInt(el.dataset.target);
+      let current = 0;
+      const step = target / 60;
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = Math.floor(current) + (target === 100 ? '+' : '');
+      }, 25);
+    });
+  }, 1200);
+});
+
+// ─── Scroll Reveal ───
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+
+// ─── Nav scroll effect ───
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 80) {
+    nav.style.background = 'rgba(10,22,40,0.97)';
+    nav.style.backdropFilter = 'blur(12px)';
+    nav.style.borderBottom = '1px solid rgba(201,168,76,0.08)';
+  } else {
+    nav.style.background = 'linear-gradient(to bottom, rgba(10,22,40,0.95), transparent)';
+    nav.style.backdropFilter = 'blur(2px)';
+    nav.style.borderBottom = 'none';
+  }
+});
+
+// ─── Form submit ───
+function handleSubmit(btn) {
+  btn.innerHTML = '<span style="position:relative;z-index:1">✓ تم إرسال طلبك بنجاح!</span>';
+  btn.style.background = '#2E7D52';
+  setTimeout(() => {
+    btn.innerHTML = '<span style="position:relative;z-index:1">إرسال الطلب</span><span style="position:relative;z-index:1">←</span>';
+    btn.style.background = '';
+  }, 3000);
+}
+
+// ─── Smooth parallax hero ornament ───
+window.addEventListener('scroll', () => {
+  const ornament = document.querySelector('.hero-ornament');
+  if (ornament) {
+    ornament.style.transform = `translateY(calc(-50% + ${window.scrollY * 0.15}px))`;
+  }
+});
+</script>
+</body>
+</html>
